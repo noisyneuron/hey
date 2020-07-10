@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html, body {
+  cursor: url(mouse2.png);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+
+.box {
+  width: 30vw;
+  height: 46vh;
+  margin: 1.5vh 1.5vw;
+  border: 1rem solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box:hover {
+  border: 1rem solid black;
+  cursor: pointer;
+}
+
+.box p {
+  font-size: 8rem;
+  color: black;
+  font-family: sans-serif;
+}
+
+.-red { background-color: red; }
+.-blue { background-color: blue; }
+.-yellow { background-color: yellow; }
+.-pink { background-color: pink; }
+.-green { background-color: green; }
+.-purple { background-color: purple; }
